@@ -1,12 +1,12 @@
 <com.redhat.jenkins.nodesharingfrontend.SharedNode>
   <!-- Name of the box for description purposes -->
-  <name>spartacus-1</name>
+  <name>spartacus-2</name>
   <!-- Jenkins home dir -->
   <remoteFS>/home/jenkins/master-01</remoteFS>
   <!-- Must be one -->
   <numExecutors>1</numExecutors>
   <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.21">
-    <host>10.203.15.221</host>
+    <host>10.203.131.220</host>
     <port>22</port>
     <!-- This credential ID must be present on all Executor Jenkinses! -->
     <credentialsId>jenkins-key</credentialsId>
@@ -16,5 +16,5 @@
     <retryWaitTime>0</retryWaitTime>
   </launcher>
   <!-- Labels the shared not will provide to builds. -->
-  <label>spartacus spartacus-1</label>
+  <label>spartacus spartacus-2</label>
 </com.redhat.jenkins.nodesharingfrontend.SharedNode>
